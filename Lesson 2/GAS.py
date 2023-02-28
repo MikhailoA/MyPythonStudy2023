@@ -4,5 +4,4 @@ a = float(input("Показания текущие: "))
 b = float(input("Показания прошлые: "))
 с = 8.3 # тариф грн./м3
 pay = (a - b)* с
-print(round(pay, 2))
-print(f'Сума до сплати:{pay}')
+print(f'Сума до сплати: {(round(pay, 2))} грн.')
