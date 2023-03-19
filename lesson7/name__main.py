@@ -1,5 +1,5 @@
 # Програма повторює будь яку вашу вправу з HW 1. Вправи за типами даних int та float або HW 2.
-
+# convertation radians to degrees
 def convert_radian_to_degree(radian):
     pi = 3.14159265359
     degree = radian * (180 / pi)
