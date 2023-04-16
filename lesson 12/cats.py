@@ -35,7 +35,7 @@ class Cat:
         """
         Метод в якому описується поведінка кота коли гуляє/не гуляє
         """
-        if self.play_hours == 0:  # Якщо години гри = 0, то кіт бажає гуляти.
+        if self.play_hours <= 1:  # Якщо години гри = 0, то кіт бажає гуляти.
             print(f'{self.name} хоче гуляти!!!')
             self.meow()
         else:
@@ -89,7 +89,7 @@ if __name__ == '__main__':
         print('-' * 40, f'\nЗвичайний день {cat}:')
         cat.play()
         cat.sleep()
-        for food in choices(cats_food, k=1):
+        for food in choices(cats_food, k=2):
             cat.eat(food)
         if cat.hungry:
             hungry_cats.append(cat)
